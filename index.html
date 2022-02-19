@@ -4,14 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BalogTechnologies</title>
     <link rel="stylesheet" href="tech.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="bootstrap-5.1.1-dist/css/bootstrap.css">
-</head>
+    <script
+    src="https://kit.fontawesome.com/64d58efce2.js"
+    crossorigin="anonymous"
+  ></script>
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/thinline.css">
+
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/></head>
     <style>
         .lost{
             background-color: orange;
@@ -26,152 +35,537 @@
             background-color: darkblue;
             color: white;
         }
+        
+ @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+
+body,
+input {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  background-color: #fff;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.forms-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.signin-signup {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 75%;
+  width: 50%;
+  transition: 1s 0.7s ease-in-out;
+  display: grid;
+  grid-template-columns: 1fr;
+  z-index: 5;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0rem 5rem;
+  transition: all 0.2s 0.7s;
+  overflow: hidden;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+form.sign-up-form {
+  opacity: 0;
+  z-index: 1;
+}
+
+form.sign-in-form {
+  z-index: 2;
+}
+
+.title {
+  font-size: 2.2rem;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.input-field {
+  max-width: 380px;
+  width: 100%;
+  background-color: #f0f0f0;
+  /* background-color: darkblue; */
+  margin: 10px 0;
+  height: 55px;
+  border-radius: 55px;
+  display: grid;
+  grid-template-columns: 15% 85%;
+  padding: 0 0.4rem;
+  position: relative;
+}
+
+.input-field i {
+  text-align: center;
+  line-height: 55px;
+  color: #acacac;
+  transition: 0.5s;
+  font-size: 1.1rem;
+}
+
+.input-field input {
+  background: none;
+  outline: none;
+  border: none;
+  line-height: 1;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.input-field input::placeholder {
+  color: #aaa;
+  font-weight: 500;
+}
+
+.social-text {
+  padding: 0.7rem 0;
+  font-size: 1rem;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+}
+
+.social-icon {
+  height: 46px;
+  width: 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0.45rem;
+  color: #333;
+  border-radius: 50%;
+  border: 1px solid #333;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: 0.3s;
+}
+
+.social-icon:hover {
+  color: #4481eb;
+  border-color: #4481eb;
+}
+
+.btn {
+  width: 150px;
+  /* background-color: #5995fd; */
+  background-color: orange;
+  border: none;
+  outline: none;
+  height: 49px;
+  border-radius: 49px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  background-color: #4d84e2;
+  /* background-color: darkblue; */
+}
+.panels-container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.container:before {
+  content: "";
+  position: absolute;
+  height: 2000px;
+  width: 2000px;
+  top: -10%;
+  right: 48%;
+  transform: translateY(-50%);
+  background-image: linear-gradient(-45deg, #071836 0%, #1865e9 100%);
+  transition: 1.8s ease-in-out;
+  border-radius: 50%;
+  z-index: 6;
+}
+
+.image {
+  width: 100%;
+  transition: transform 1.1s ease-in-out;
+  transition-delay: 0.4s;
+}
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  text-align: center;
+  z-index: 6;
+}
+
+.left-panel {
+  pointer-events: all;
+  padding: 3rem 17% 2rem 12%;
+}
+
+.right-panel {
+  pointer-events: none;
+  padding: 3rem 12% 2rem 17%;
+}
+
+.panel .content {
+  color: #fff;
+  transition: transform 0.9s ease-in-out;
+  transition-delay: 0.6s;
+}
+
+.panel h3 {
+  font-weight: 600;
+  line-height: 1;
+  font-size: 1.5rem;
+}
+
+.panel p {
+  font-size: 0.95rem;
+  padding: 0.7rem 0;
+}
+
+.btn.transparent {
+  margin: 0;
+  background: none;
+  border: 2px solid #fff;
+  width: 130px;
+  height: 41px;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.right-panel .image,
+.right-panel .content {
+  transform: translateX(800px);
+}
+
+/* ANIMATION */
+
+.container.sign-up-mode:before {
+  transform: translate(100%, -50%);
+  right: 52%;
+}
+
+.container.sign-up-mode .left-panel .image,
+.container.sign-up-mode .left-panel .content {
+  transform: translateX(-800px);
+}
+
+.container.sign-up-mode .signin-signup {
+  left: 25%;
+}
+
+.container.sign-up-mode form.sign-up-form {
+  opacity: 1;
+  z-index: 2;
+}
+
+.container.sign-up-mode form.sign-in-form {
+  opacity: 0;
+  z-index: 1;
+}
+
+.container.sign-up-mode .right-panel .image,
+.container.sign-up-mode .right-panel .content {
+  transform: translateX(0%);
+}
+
+.container.sign-up-mode .left-panel {
+  pointer-events: none;
+}
+
+.container.sign-up-mode .right-panel {
+  pointer-events: all;
+}
+
+@media (max-width: 870px) {
+  .container {
+    min-height: 800px;
+    height: 100vh;
+  }
+  .signin-signup {
+    width: 100%;
+    top: 95%;
+    transform: translate(-50%, -100%);
+    transition: 1s 0.8s ease-in-out;
+  }
+
+  .signin-signup,
+  .container.sign-up-mode .signin-signup {
+    left: 50%;
+  }
+
+  .panels-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+  }
+
+  .panel {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2.5rem 8%;
+    grid-column: 1 / 2;
+  }
+
+  .right-panel {
+    grid-row: 3 / 4;
+  }
+
+  .left-panel {
+    grid-row: 1 / 2;
+  }
+
+  .image {
+    width: 200px;
+    transition: transform 0.9s ease-in-out;
+    transition-delay: 0.6s;
+  }
+
+  .panel .content {
+    padding-right: 15%;
+    transition: transform 0.9s ease-in-out;
+    transition-delay: 0.8s;
+  }
+
+  .panel h3 {
+    font-size: 1.2rem;
+  }
+
+  .panel p {
+    font-size: 0.7rem;
+    padding: 0.5rem 0;
+  }
+
+  .btn.transparent {
+    width: 110px;
+    height: 35px;
+    font-size: 0.7rem;
+  }
+
+  .container:before {
+    width: 1500px;
+    height: 1500px;
+    transform: translateX(-50%);
+    left: 30%;
+    bottom: 68%;
+    right: initial;
+    top: initial;
+    transition: 2s ease-in-out;
+  }
+
+  .container.sign-up-mode:before {
+    transform: translate(-50%, 100%);
+    bottom: 32%;
+    right: initial;
+  }
+
+  .container.sign-up-mode .left-panel .image,
+  .container.sign-up-mode .left-panel .content {
+    transform: translateY(-300px);
+  }
+
+  .container.sign-up-mode .right-panel .image,
+  .container.sign-up-mode .right-panel .content {
+    transform: translateY(0px);
+  }
+
+  .right-panel .image,
+  .right-panel .content {
+    transform: translateY(300px);
+  }
+
+  .container.sign-up-mode .signin-signup {
+    top: 5%;
+    transform: translate(-50%, 0);
+  }
+}
+
+@media (max-width: 570px) {
+  form {
+    padding: 0 1.5rem;
+  }
+
+  .image {
+    display: none;
+  }
+  .panel .content {
+    padding: 0.5rem 1rem;
+  }
+  .container {
+    padding: 1.5rem;
+  }
+
+  .container:before {
+    bottom: 72%;
+    left: 50%;
+  }
+
+  .container.sign-up-mode:before {
+    bottom: 28%;
+    left: 50%;
+  }
+}
+
+
+
+
+          
     </style>
 
 
 
 <body style="background-color: rgb(244, 244, 248);">
-
+ 
+  <div><img src="./mylogo-removebg-preview.png" width="20%" alt=""></div>
           <section class="build ">
-            <nav style="margin-bottom: 5px;" class=" border-bottom shadow">
-                <input type="checkbox" id="check">
-                <label for="check" class="checkbtn"></label>
-                <label for="check">
-                    <i class="fas fa-bars"></i>
-                </label>
-               <label class="logo">BALOGTECH</label>
-               <ul>
-                   <li><a class="active" href="#">Home</a></li>
-                   <li><a href="#">About</a></li>
-                   <li><a href="#">product</a></li>
-                   <li><a href="#">Contact</a></li>
-                   <li><a href="#">feedback</a></li>
-               </ul>
-            </nav>
-        
-             <!-- <div class="tech"> 
-               
 
-                <div class="container">
-                    <div class="forms-container">
-                        <div class="singin-singup">
-                            <form action="" class="sign-in-form">
-    
-                                <h2 class="tittle">Sign in</h2>
-                                <div class="input-field">
-                                    <i class="fas fa-user"></i>
-                                    <input type="text" placeholder="Username">
-                                </div>
-                                <div class="input-field">
-                                    <i class="fas fa-lock"></i>
-                                    <input type="text" placeholder="Password">
-                                </div>
-                                <input type="submit" value="login" class="btn-solid">
-    
-                                <p class="social-text">or sign in with social platforms</p>
-                                <div class="social-media">
-                                    <a href="#" class="social-icon">
-                                        <i class="fab fa-facebok-f"></i>
-                                    </a>
-                                    <a href="#" class="social-icon">
-                                        <i class="fab fa-twitter"></i>
-    
-                                    </a>
-                                    <a href="#" class="social-icon">
-                                        <i class="fab fa-linkedin"></i>
-    
-                                    </a>
-                                    <a href="#" class="social-icon">
-                                        <i class="fab fa-google"></i>
-    
-                                    </a>
-                                </div>
-                            </form>
-    
-                            <form action="" class="sign-up-form">
-    
-                                <h2 class="tittle">Sign up</h2>
-                                <div class="input-field">
-                                    <i class="fas fa-user"></i>
-                                    <input type="text" placeholder="Username">
-                                </div>
-    
-                                <div class="input-field">
-                                    <i class="fas fa-envelope"></i>
-                                    <input type="text" placeholder="Email">
-                                </div>
-                                <div class="input-field">
-                                    <i class="fas fa-lock"></i>
-                                    <input type="password" placeholder="password">
-                                </div>
-                                <input type="submit" value="sign up" class="btn-solid">
-    
-                                <p class="social-text">or sign up with social platforms</p>
-                                <div class="social-media">
-                                    <a href="#" class="social-icon">
-                                        <i class="fab fa-facebok-f"></i>
-                                    </a>
-                                    <a href="#" class="social-icon">
-                                        <i class="fab fa-twitter"></i>
-    
-                                    </a>
-                                    <a href="#" class="social-icon">
-                                        <i class="fab fa-linkedin"></i>
-    
-                                    </a>
-                                    <a href="#" class="social-icon">
-                                        <i class="fab fa-google"></i>
-    
-                                    </a>
-                                </div>
-                            </form>
-    
-                          
-                        </div>
-                    </div>
-                      <div class="panels-container">
-                          <div class="panel left-panel">
-                               <div class="content">
-                                   <h3>New here ?</h3>
-                                   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non rerum</p>
-                                   <button class="btn transparent" id="sign-up-btn">sign up</button>
-                               </div>
-                               <img src="./agile.png"  class="image" alt="">
-                          </div>
-                          <div class="panels-container">
-                            <div class="panel left-panel">
-                                 <div class="content">
-                                     <h3>one of us</h3>
-                                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non rerum</p>
-                                     <button class="btn transparent" id="sign-in-btn">sign up</button>
-                                 </div>
-                                 <img src="./aii.png"  class="image" alt="">
-                            </div>
-      
+            <div class="container">
+                <div class="forms-container">
+                  <div class="signin-signup">
+                    <form action="#" class="sign-in-form">
+                      <h2 class="title">Sign in</h2>
+                      <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Username" />
                       </div>
+                      <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Password" />
+                      </div>
+                      <input type="submit" value="Login" class="btn solid" />
+                      <p class="social-text">Or Sign in with social platforms</p>
+                      <div class="social-media">
+                        <a href="#" class="social-icon">
+                          <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                          <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                          <i class="fab fa-google"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                          <i class="fab fa-linkedin-in"></i>
+                        </a>
+                      </div>
+                    </form>
+                    <form action="#" class="sign-up-form">
+                      <h2 class="title">Sign up</h2>
+                      <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Username" />
+                      </div>
+                      <div class="input-field">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" placeholder="Email" />
+                      </div>
+                      <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Password" />
+                      </div>
+                      <!-- =========================working============== -->
+                      <div>
+                        <p>jjjjjjjjjjjjjjjjjjjj</p>
+                        <p>jjjjjjjjjjjjjjjjjjjj</p>
+                        <p>jjjjjjjjjjjjjjjjjjjj</p>
+
+
+                      </div>
+                      
+                      <input type="submit" class="btn" value="Sign up" />
+                      <p class="social-text">Or Sign up with social platforms</p>
+                      <div class="social-media">
+                        <a href="#" class="social-icon">
+                          <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                          <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                          <i class="fab fa-google"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                          <i class="fab fa-linkedin-in"></i>
+                        </a>
+                      </div>
+                    </form>
+                  </div>
                 </div>
-    
-    
-            </div>
- -->
+          
+                <div class="panels-container">
+                  <div class="panel left-panel">
+                    <div class="content">
+                      <h3>New here ?</h3>
+                      <p>
+                       A DIgital Transformation Expert in building Business software, saas, E-commerce,
+                       MArkeplace and cloud-enabled Web platforms 
 
-
-
-
-
-
-
-            
+                      </p>
+                     
+                        <button class="btn transparent" id="sign-up-btn">
+                            Sign up ml
+                          </button>
+                     
+                    </div>
+                    <img src="img/log.svg" class="image" alt="" />
+                  </div>
+                  <div class="panel right-panel">
+                    <div class="content">
+                      <h3>One of us ?</h3>
+                      <p>
+                       High Quality Web Design and Mobile App Development Company
+                      </p>
+                     
+                        <button class="btn transparent" id="sign-in-btn">
+                            Sign in bl
+                          </button>  
+                    
+                    </div>
+                    <img src="img/register.svg" class="image" alt="" />
+                  </div>
+                </div>
+              </div>
+          
+        
 
             <div class="explore" style="margin-top: 50px;">
                 <h1 style="font-size: 25px; color: darkblue;">
                     Explore Our Expertise in
                 </h1>
                 
-            </div>
+            </div> 
             
             <!-- prduct and service description and explanation -->
-            <div class="project">
+            <div class="project  animate__animated animate__fadeInUp">
                 <div class="let" >
                     <div style="margin-top: 15px;">
                         <img src="./icon2.png" alt="web" width="60px" height="60px" style="margin-left: 40%; margin-bottom: 5px; margin-top: 10px;">
@@ -183,13 +577,13 @@
                             your existing website, BalogTech is here to raise your online presence.
                             we do web apps & Development accross various platform
                         </p>
-                        <a href="./web.html"  style="text-decoration: none;"> <div class="lost"><h6 style="text-align: center; padding-top: 6px;" ><b> Read more</b></h6></div></a>
+                        <a href="./web.html"  style="text-decoration: none;"> <div class="lost"><h6 style="text-align: center; padding-top: 10px;" ><b> Read more</b></h6></div></a>
                     </div>
                 </div>
 
             </div>
 
-            <div class="project">
+            <div class="project  animate__animated animate__fadeInUp">
                 <div class="let1">
                     <div style="margin-top: 15px;">
                         <img src="./icon11.png" alt="web" width="60px" height="60px" style="margin-left: 40%; margin-bottom: 5px; margin-top: 10px;">
@@ -197,18 +591,19 @@
                     </div>
                     <div>
                         <p style="font-size: 13px; padding-left: 10px; padding-right: 10px; margin-bottom: 6; text-align: center; color: grey;">
-                            Start your project from Scratch or improve
-                            your existing website, BalogTech is here to raise your online presence.
-                            we do web apps & Development accross various platform
+                           BalogTech deliver E-commerce development services which allows 
+                           everyone to engage with their client effortlessly. we create professional 
+                           web store that are both unique and modern, which gives retail 
+                           business an edge over their compititors.
                         </p>
-                        <a href="./commerce.html" style="text-decoration: none;"><div class="lost"><h6 style="text-align: center; padding-top: 6px;" ><b> Read more</b></h6></div>                        </a>
+                        <a href="./commerce.html" style="text-decoration: none;"><div class="lost"><h6 style="text-align: center; padding-top: 10px;" ><b> Read more</b></h6></div>                        </a>
                     </div>
 
                 </div>
 
             </div>
 
-            <div class="project">
+            <div class="project  animate__animated animate__fadeInUp">
                 <div class="let2">
                     <div style="margin-top: 15px;">
                         <img src="./icon15.png" alt="web" width="60px" height="60px" style="margin-left: 40%; margin-bottom: 5px; margin-top: 10px;">
@@ -216,37 +611,37 @@
                     </div>
                     <div>
                         <p style="font-size: 13px; padding-left: 10px; padding-right: 10px; margin-bottom: 6; text-align: center; color: grey;">
-                            Start your project from Scratch or improve
-                            your existing website, BalogTech is here to raise your online presence.
-                            we do web apps & Development accross various platform
+                           Progressive apps are the future. we develop PWA's with a smoothy user experience,
+                           enhanced performances, improve security and increase user access.
+
                         </p>
-                        <a href="./progressive.html" style="text-decoration: none;"><div class="lost"><h6 style="text-align: center; padding-top: 6px;" ><b> Read more</b></h6></div></a>
+                        <a href="./progressive.html" style="text-decoration: none;"><div class="lost"><h6 style="text-align: center; padding-top: 10px;" ><b> Read more</b></h6></div></a>
                     </div>
 
                 </div>
 
             </div>
 
-            <div class="project">
-                <div class="let3">
+            <div class="project  animate__animated animate__fadeInUp">
+                <div class="let3 ">
                     <div style="margin-top: 15px;">
                         <img src="./icon3.png" alt="web" width="60px" height="60px" style="margin-left: 40%; margin-bottom: 5px; margin-top: 10px;">
                         <p style="margin-bottom: 5px; text-align: center; color: darkblue; font-size: larger;"><b>Moblie App Development</b></p>
                     </div>
                     <div>
                         <p style="font-size: 13px; padding-left: 10px; padding-right: 10px; margin-bottom: 6; text-align: center; color: gray;">
-                            Start your project from Scratch or improve
-                            your existing website, BalogTech is here to raise your online presence.
-                            we do web apps & Development accross various platform
+                            Convert your idea into a Moblie apps or take existing your business Moblie width
+                            Moblie app development. we organisation develop and mantain Moblie apps iphone, android
+                            and ipad devices.
                         </p>
-                        <a href="./mobile.html" style="text-decoration: none;"> <div class="lost"><h6 style="text-align: center; padding-top: 6px;" ><b> Read more</b></h6></div> </a>
+                        <a href="./mobile.html" style="text-decoration: none;"> <div class="lost"><h6 style="text-align: center; padding-top: 10px;" ><b> Read more</b></h6></div> </a>
                     </div>
 
                 </div>
 
             </div>
 
-            <div class="project">
+            <div class="project  animate__animated animate__fadeInUp">
                 <div class="let4">
                     <div style="margin-top: 15px;">
                         <img src="./icon6.png" alt="web" width="60px" height="60px" style="margin-left: 40%; margin-bottom: 5px; margin-top: 10px;">
@@ -254,18 +649,18 @@
                     </div>
                     <div>
                         <p style="font-size: 13px; padding-left: 10px; padding-right: 10px; margin-bottom: 6; text-align: center; color: grey;">
-                            Start your project from Scratch or improve
-                            your existing website, BalogTech is here to raise your online presence.
-                            we do web apps & Development accross various platform
+                           Acheive  your enterprise goals with custom reliable enterprise software development.
+                           we deliver efficient and scalable solutions for enterprise needs.
+                           
                         </p>
-                        <a href="./enterprise.html" style="text-decoration: none;"><div class="lost"><h6 style="text-align: center; padding-top: 6px;" ><b> Read more</b></h6></div> </a>
+                        <a href="./enterprise.html" style="text-decoration: none;"><div class="lost"><h6 style="text-align: center; padding-top: 10px;" ><b> Read more</b></h6></div> </a>
                     </div>
 
                 </div>
 
             </div>
 
-            <div class="project">
+            <div class="project  animate__animated animate__fadeInUp">
                 <div class="let5">
                     <div style="margin-top: 15px;">
                         <img src="./icon17.png" alt="web" width="60px" height="60px" style="margin-left: 40%; margin-bottom: 5px; margin-top: 10px;">
@@ -273,11 +668,10 @@
                     </div>
                     <div>
                         <p style="font-size: 13px; padding-left: 10px; padding-right: 10px; margin-bottom: 6; text-align: center; color: grey;">
-                            Start your project from Scratch or improve
-                            your existing website, BalogTech is here to raise your online presence.
-                            we do web apps & Development accross various platform
+                           At BalogTech we develop saaS products using the most advanced tools and systems. we help client 
+                           to build scalable saaS appllication from scratch or re-architech existing apps for saaS environment.
                         </p>
-                        <a href="./sass.html" style="text-decoration: none;"><div class="lost"><h6 style="text-align: center; padding-top: 6px;" ><b> Read more</b></h6></div>  </a>
+                        <a href="./sass.html" style="text-decoration: none;"><div class="lost"><h6 style="text-align: center; padding-top: 10px;" ><b> Read more</b></h6></div>  </a>
 
                     </div>
 
@@ -285,7 +679,7 @@
 
             </div>
 
-            <div class="project">
+            <div class="project  animate__animated animate__fadeInUp">
                 <div class="let6">
                     <div style="margin-top: 15px;">
                         <img src="./icon4.png" alt="web" width="60px" height="60px" style="margin-left: 40%; margin-bottom: 5px; margin-top: 10px;">
@@ -293,18 +687,19 @@
                     </div>
                     <div>
                         <p style="font-size: 13px; padding-left: 10px; padding-right: 10px; margin-bottom: 6; text-align: center; color: grey;">
-                            Start your project from Scratch or improve
-                            your existing website, BalogTech is here to raise your online presence.
-                            we do web apps & Development accross various platform
+                           We use big data-driven analytics and Ai intellengent to provide client 
+                           with deeper and more relevant insight for the decision making. we are 
+                           highly proficient in SQL and  Python. we can also build cloud pipelines and provide 
+                           AI tools Expertise.  
                         </p>
-                        <a href="./machine.html" style="text-decoration: none;"><div class="lost"><h6 style="text-align: center; padding-top: 6px;" ><b> Read more</b></h6></div>                        </a>
+                        <a href="./machine.html" style="text-decoration: none;"><div class="lost"><h6 style="text-align: center; padding-top: 10px;" ><b> Read more</b></h6></div>                        </a>
                     </div>
 
                 </div>
 
             </div>
 
-            <div class="project">
+            <div class="project  animate__animated animate__fadeInUp">
                 <div class="let7">
                     <div style="margin-top: 15px;">
                         <img src="./icon20.png" alt="web" width="60px" height="60px" style="margin-left: 40%; margin-bottom: 5px; margin-top: 10px;">
@@ -312,11 +707,12 @@
                     </div>
                     <div>
                         <p style="font-size: 13px; padding-left: 10px; padding-right: 10px; margin-bottom: 6; text-align: center; color: grey;">
-                            Start your project from Scratch or improve
-                            your existing website, BalogTech is here to raise your online presence.
-                            we do web apps & Development accross various platform
+                           Transform your business and implement digital strategies with public, private
+                           and Hybrid cloud intergration. Cloud Technology allows youe business to be extensible,
+                           elastic, cost-efficient and secure
+
                         </p>
-                        <a href="./cloud.html" style="text-decoration: none;"> <div class="lost"><h6 style="text-align: center; padding-top: 6px;" ><b> Read more</b></h6></div>                        </a>
+                        <a href="./cloud.html" style="text-decoration: none;"> <div class="lost"><h6 style="text-align: center; padding-top: 10px;" ><b> Read more</b></h6></div>                        </a>
                     </div>
 
                 </div>
@@ -324,7 +720,7 @@
             </div>
 
 
-            <div class="project" style="margin-bottom: 40px;">
+            <div class="project  animate__animated animate__fadeInUp" style="margin-bottom: 40px;">
                 <div class="let8">
                     <div style="margin-top: 15px;">
                         <img src="./icon19.png" alt="web" width="60px" height="60px" style="margin-left: 40%; margin-bottom: 5px; margin-top: 10px;">
@@ -332,11 +728,12 @@
                     </div>
                     <div>
                         <p style="font-size: 13px; padding-left: 10px; padding-right: 10px; margin-bottom: 6; text-align: center; color: grey;">
-                            Start your project from Scratch or improve
-                            your existing website, BalogTech is here to raise your online presence.
-                            we do web apps & Development accross various platform
+                           Our multi-vendor Marketplace development team specializes in transforming
+                           business into reality simplifying inline Marketplace development using cutting-edge 
+                           Technology to produce secure, scalable and user friendly solutions. 
+                         
                         </p>
-                        <a href="./marketplace.html" style="text-decoration: none;"> <div class="lost"><h6 style="text-align: center; padding-top: 6px;" ><b> Read more</b></h6></div>                        </a>
+                        <a href="./marketplace.html" style="text-decoration: none;"> <div class="lost"><h6 style="text-align: center; padding-top: 10px;" ><b> Read more</b></h6></div>                        </a>
                     </div>
 
                 </div>
@@ -370,11 +767,15 @@
                      </b>
                   </p>
                    
-                  <ul style="color: white;">
-                      <li><b>Progressive Web Development</b></li>
-                      <li> <b>UI/UX Design</b></li>
-                      <li><b>Branding</b></li>
-                  </ul>
+                  
+
+                <div style="padding-left: 10px; padding-right: 10px;">
+                    <p style="margin: 0;color: white;"><b>Progressive Web Development</b></p>
+                    <p style="margin: 0;color: white;"> <b>UI/UX Design</b></p>
+                    <p style="margin: 0;color: white;"><b>Branding</b></p>
+                </div>
+                
+                
               </div>
           </div>
       </div>
@@ -396,11 +797,13 @@
                </b>
             </p>
              
+           <div class="list">
             <ul style="color: white;">
                 <li><b>Progressive Web Development</b></li>
                 <li> <b>UI/UX Design</b></li>
                 <li><b>Branding</b></li>
             </ul>
+           </div>
         </div>
 
       </div>
@@ -452,6 +855,8 @@
                 <li> <b>UI/UX Design</b></li>
                 <li><b>Branding</b></li>
             </ul>
+
+            
         </div>
 
       </div>
@@ -468,7 +873,7 @@
              <b>  BalogTech Promises Uniqueness, Digital Transformation and Lot More...  </b>
             </h4>
 
-            <p style="text-align: center; padding-left: 20px; padding-right: 20px; font-size: 13px; font-weight: 300;color: grey;">
+            <p style="text-align: center; padding-left: 20px; padding-right: 20px; font-size: 14px; font-weight: 300;color: grey;">
              <b>
                 At BalogTech <br> we pride ourselves on delivery custom solutions, for both startups and 
                 leading brands, from strategyto UI/UX designs to digital prototypes, we are an Award-winning 
@@ -477,11 +882,15 @@
                 Our Team is here to lead the Growth of your Next Successful <br> Project.
 
              </b>
+
             </p>
              
-               <div class="lost">
-                   <p style="text-align: center; padding-top: 5px;"><b>modal popup</b></p>
-               </div>  
+               <div class="lost" >
+                    <a href="email.html" style="text-decoration: none;">
+                      <p style="text-align: center; padding-top: 5px; color: darkblue;"><b>Support Team </b></p>
+
+                    </a>
+              </div>  
         </div>
     </div>
 
@@ -508,11 +917,10 @@
              </p>
 
              <div class="lost">
-                <p style="text-align: center; padding-top: 5px;"><b>modal popup</b></p>
-            </div>  
-      </div>
-     </div>
-     
+              <p style="text-align: center; padding-top: 5px;"><b>Developer's Team</b></p>
+             </div>  
+
+
 
      
 
@@ -530,16 +938,19 @@
                  
 
                   
+  </section>
+
+<!-- desktop view large screen -->
+  <section class="desktop">
+<h1>
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam ex rem, praesentium optio, adipisci officiis hic non ut, porro distinctio temporibus
+     cum minus nam fugiat modi itaque sapiente et impedit.
+</h1>
 
 
 
-
-
-
-
-
-
-          </section>
-          <script src="tech.js"> </script>
+  </section>
+  <script src="tech.js"> </script>
 </body>
 </html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>

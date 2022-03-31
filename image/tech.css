@@ -1,0 +1,258 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap"); */
+/* media queery on moble screen */
+@media (max-width: 700px) {
+    .build{
+        display: grid !important;
+        width: 100% !important;
+    } 
+} 
+/* media query of big screen */
+@media (max-width : 1400px) {
+    .build{
+        display: none ;
+    }
+}  
+
+@media (max-width : 700px){
+    .desktop{
+        display: none !important;
+    }
+}
+
+@media (max-width : 1400px){
+    .desktop{
+        display: grid;
+        width: 100%;
+    }
+}
+
+
+
+
+/* First Texting about what we do  */
+*{
+    padding: 0;
+    margin: o;
+    box-sizing: border-box;
+    text-decoration: none !important;
+    list-style: none;
+}
+body, input{
+    font-family: sans-serif;
+}
+
+
+
+.info{
+    width: 100%;
+    height: 400px;
+    background-color: orange;
+    border-bottom-left-radius: 350px;
+    border-bottom-right-radius: 350px;
+    clip-path: polygon( 100%, 100% 100%, 100% 100, 0 0);
+    /* background-image: url(./heeaad.png); */
+    background-repeat: no-repeat;
+    
+  
+}
+
+.font{
+    width: 100% ;
+    height: 400px;
+    background-color: darkblue;
+    /* background: linear-gradient(gold, darkblue, goldenrod, gold); */
+    border-top-left-radius: 350px;
+    border-top-right-radius: 350px;
+    clip-path: polygon( 100%, 100% 100%, 100% 100, 0 0);
+      
+}
+
+.tech{
+    background-color: coral;
+    align-items: center !important;
+    height: 70px;
+}
+.tech1{
+    background-color: cornflowerblue;
+}
+
+/* expore section properties */
+.explore{
+    padding-left: 40px;
+}
+
+
+
+/* prduct and service description and explanation  */
+
+.let{
+    /* border:  1px solid gold!important; */
+    width: 90% !important;
+    height: 280px;
+    border-radius: 10px;
+    margin-left: 5%;
+    margin-bottom: 20px;
+    background-color: white;
+    
+
+}
+/* .let:hover{
+    border: 1px solid goldenrod !important;
+    
+} */
+.let1{
+    /* border:  1px solid gold !important; */
+    width: 90% !important;
+    height: 280px;
+    border-radius: 10px;
+    margin-left: 5%;
+    margin-bottom: 20px;
+    background-color: white;
+}
+/* .let1:hover{
+    border: 1px solid goldenrod !important;
+    
+} */
+
+.let2{
+    /* border:  1px solid gold !important; */
+    width: 90% !important;
+    height: 280px;
+    border-radius: 10px;
+    margin-left: 5%;
+    margin-bottom: 20px;
+    background-color: white;
+
+}
+/* .let2:hover{
+    border: 1px solid goldenrod !important;
+    
+} */
+
+
+.let3{
+    /* border:  1px solid gold !important; */
+    width: 90% !important;
+    height: 280px;
+    border-radius: 10px;
+    margin-left: 5%;
+    margin-bottom: 20px;
+    background-color: white;
+
+}
+/* .let3:hover{
+    border: 1px solid goldenrod !important;
+    
+} */
+
+.let4{
+    /* border:  1px solid gold !important; */
+    width: 90% !important;
+    height: 280px;
+    border-radius: 10px;
+    margin-left: 5%;
+    margin-bottom: 20px;
+    background-color: white;
+
+
+}
+/* .let4:hover{
+    border: 1px solid goldenrod !important;
+    
+} */
+
+.let5{
+    /* border:  1px solid gold !important; */
+    width: 90% !important;
+    height: 280px;
+    border-radius: 10px;
+    margin-left: 5%;
+    margin-bottom: 20px;
+    background-color: white;
+
+
+}
+/* .let5:hover{
+    border: 1px solid goldenrod !important;
+    
+} */
+
+.let6{
+    /* border:  1px solid gold !important; */
+    width: 90% !important;
+    height: 300px;
+    border-radius: 10px;
+    margin-left: 5%;
+    margin-bottom: 20px;
+    background-color: white;
+
+
+}
+/* .let6:hover{
+    border: 1px solid goldenrod !important;
+    
+} */
+
+.let7{
+    /* border:  1px solid gold !important; */
+    width: 90% !important;
+    height: 280px;
+    border-radius: 10px;
+    margin-left: 5%;
+    margin-bottom: 20px;
+    background-color: white;
+
+
+}
+/* .let7:hover{
+    border: 1px solid goldenrod !important;
+    
+} */
+
+.let8{
+    /* border:  1px solid gold !important; */
+    width: 90% !important;
+    height: 300px !important;
+    border-radius: 10px;
+    margin-left: 5%;
+    margin-bottom: 20px;
+    background-color: white;
+
+}
+/* .let8:hover{
+    border: 1px solid goldenrod !important;
+    
+} */
+
+/* ending section prduct and service description and explanation  */
+
+
+
+/* <!-- Hilight on product and different software  --> */
+.soft{
+    width: 100%;
+    height: 550px;
+    background-color: rgb(98, 98, 157);
+}
+.soft1{
+    width: 100%;
+    height: 550px;
+    background-color: rgb(235, 157, 4);
+}
+.soft2{
+    width: 100%;
+    height: 550px;
+    background-color: rgb(78, 73, 184);
+}
+.soft3{
+    width: 100%;
+    height: 550px;
+    background-color: rgb(124,125,233);
+}
+
+
+
+/* <!--  Ending section of Hilight on product and different software  --> */
+
+
+

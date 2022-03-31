@@ -20,16 +20,19 @@
   <link
   rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-/></head>
+/>
+<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/thinline.css">
+</head>
     <style>
         .lost{
             background-color: orange;
             color: darkblue;
-            border-radius: 5px;
+            border-radius: 0px 30px 30px 30px;
             border: none;
             margin-left: 30%;
-            height: 40px;
+            height: 50px;
             width: 40%;
+            padding-top: 15px;
         }
           .lost:hover{
             background-color: darkblue;
@@ -409,7 +412,7 @@ form.sign-in-form {
   }
 }
 
-@media (max-width: 570px) {
+@media (max-width: 700px) {
   form {
     padding: 0 1.5rem;
   }
@@ -454,19 +457,112 @@ form.sign-in-form {
  margin-top: 30px;
  color: darkblue;
 }
+#wif{
+  background-color: whitesmoke;
+  margin: 5px;
+  border-radius: 10px;
+  height: 50px;
+  
+}
+#wif:hover{
+  background-color: darkblue;
+}
+#act:active{
+  color: white !important;
+
+}
 
 
 
 
-          
-    </style>
+ </style>
 
 
 
 <body style="background-color: rgb(244, 244, 248);">
  
-  <div><img src="./mylogo-removebg-preview.png" width="20%" alt=""></div>
           <section class="build ">
+            <!-- <div>
+              <img src="./image/mylogo-removebg-preview.png" width="20%" alt="">
+            </div> -->
+
+            <nav class="navbar navbar-light bg-light fixed-top">
+              <div class="container-fluid">
+                <div style="display: flex;">
+                <a class="navbar-brand" href="#">
+                  <img src="./image/mylogo-removebg-preview.png" width="40%" alt="">
+
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              </div>
+
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                      <img src="./image/mylogo-removebg-preview.png" width="40%"  alt="">
+
+                    </h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                      <li class="nav-item" id="wif">
+                        <a class="nav-link active" aria-current="page" href="./web.html">
+                          <p style="margin-left: 10px; color: darkblue; text-align: center; margin-top: 5px;" id="act">Web Design & Development</p>
+                        </a>
+                      </li>
+
+                      <li class="nav-item" id="wif">
+                        <a class="nav-link active"  href="./commerce.html">
+                          <p style="margin-left: 10px; color: darkblue; text-align: center; margin-top: 5px;" id="act">E-Commerce Development</p>
+                        </a>
+                      </li>
+                      <li class="nav-item" id="wif">
+                        <a class="nav-link active" href="./progressive.html">
+                          <p style="margin-left: 10px; color: darkblue; text-align: center; margin-top: 5px;" id="act">Progressive Web App Development</p>
+                        </a>
+                      </li>
+                      <li class="nav-item" id="wif">
+                        <a class="nav-link active" href="./mobile.html">
+                          <p style="margin-left: 10px; color: darkblue; text-align: center; margin-top: 5px;" id="act">Mobile App Development</p>
+                        </a>
+                      </li>
+                      <li class="nav-item" id="wif">
+                        <a class="nav-link active" href="./enterprise.html">
+                          <p style="margin-left: 10px; color: darkblue; text-align: center; margin-top: 5px;" id="act">Enterprise Software Development</p>
+                        </a>
+                      </li>
+                      <li class="nav-item" id="wif">
+                        <a class="nav-link active" href="./sass.html">
+                          <p style="margin-left: 10px; color: darkblue; text-align: center; margin-top: 5px;" id="act">Saas Applicatoin Development</p>
+                        </a>
+                      </li>
+                      <li class="nav-item" id="wif">
+                        <a class="nav-link active" href="./machine.html">
+                          <p style="margin-left: 10px; color: darkblue; text-align: center; margin-top: 5px;" id="act">AI & Machine Learning Development</p>
+                        </a>
+                      </li>
+                      <li class="nav-item" id="wif">
+                        <a class="nav-link active" href="./cloud.html">
+                          <p style="margin-left: 10px; color: darkblue; text-align: center; margin-top: 5px;" id="act">Cloud Computing Service</p>
+                        </a>
+                      </li>
+                      <li class="nav-item" id="wif">
+                        <a class="nav-link active" href="./marketplace.html">
+                          <p style="margin-left: 10px; color: darkblue; text-align: center; margin-top: 5px;" id="act">Marketplace Software Development</p>
+                        </a>
+                      </li>
+
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </nav>
+
+          <br><br><br>
 
             <div class="container">
                 <div class="forms-container">
@@ -513,13 +609,7 @@ form.sign-in-form {
                         <input type="password" placeholder="Password" />
                       </div>
                       <!-- =========================working============== -->
-                      <div>
-                        <p>jjjjjjjjjjjjjjjjjjjj</p>
-                        <p>jjjjjjjjjjjjjjjjjjjj</p>
-                        <p>jjjjjjjjjjjjjjjjjjjj</p>
-
-
-                      </div>
+                      
                       
                       <input type="submit" class="btn" value="Sign up" />
                       <p class="social-text">Or Sign up with social platforms</p>
@@ -544,33 +634,33 @@ form.sign-in-form {
                 <div class="panels-container">
                   <div class="panel left-panel">
                     <div class="content">
-                      <h3>New here ?</h3>
-                      <p>
+                      <!-- <h3>New here ?</h3> -->
+                      <p >
                        A DIgital Transformation Expert in building Business software, saas, E-commerce,
                        MArkeplace and cloud-enabled Web platforms 
 
                       </p>
                      
                         <button class="btn transparent" id="sign-up-btn">
-                            Sign up ml
+                            Sign up
                           </button>
                      
                     </div>
-                    <img src="img/log.svg" class="image" alt="" />
+                    <img src="img/image/log.svg" class="image" alt="" />
                   </div>
                   <div class="panel right-panel">
                     <div class="content">
-                      <h3>One of us ?</h3>
-                      <p>
+                      <!-- <h3>One of us ?</h3> -->
+                      <p style="font-size: 18px;">
                        High Quality Web Design and Mobile App Development Company
                       </p>
                      
                         <button class="btn transparent" id="sign-in-btn">
-                            Sign in bl
+                            Sign in
                           </button>  
                     
                     </div>
-                    <img src="img/register.svg" class="image" alt="" />
+                    <img src="img/image/register.svg" class="image" alt="" />
                   </div>
                 </div>
               </div>
@@ -588,8 +678,8 @@ form.sign-in-form {
             <div class="project  animate__animated animate__fadeInUp">
                 <div class="let" >
                     <div style="margin-top: 15px;">
-                        <img src="./icon2.png" alt="web" width="60px" height="60px" style="margin-left: 40%; margin-bottom: 5px; margin-top: 10px;">
-                        <p style="margin-bottom: 5px; text-align: center; color: darkblue; font-size: larger;"><b>Web Design &  Development</b></p>
+                        <img src="./image/icon2.png" alt="web" width="60px" height="60px" style="margin-left: 40%; margin-bottom: 5px; margin-top: 10px;">
+                        <p id="air1" style="margin-bottom: 5px; text-align: center; color: darkblue; font-size: larger;"><b>Web Design &  Development</b></p>
                     </div>
                     <div>
                         <p style="font-size: 13px;  padding-left: 10px; padding-right: 10px; margin-bottom: 6; text-align: center; color: grey;">
@@ -597,7 +687,7 @@ form.sign-in-form {
                             your existing website, BalogTech is here to raise your online presence.
                             we do web apps & Development accross various platform
                         </p>
-                        <a href="./web.html"  style="text-decoration: none;"> <div class="lost"><h6 style="text-align: center; padding-top: 10px;" ><b> Read more</b></h6></div></a>
+                        <a href="./web.html"  style="text-decoration: none;"> <div class="lost"><h6 style="text-align: center;" ><b> Read more</b></h6></div></a>
                     </div>
                 </div>
 
@@ -606,7 +696,7 @@ form.sign-in-form {
             <div class="project  animate__animated animate__fadeInUp">
                 <div class="let1">
                     <div style="margin-top: 15px;">
-                        <img src="./icon11.png" alt="web" width="60px" height="60px" style="margin-left: 40%; margin-bottom: 5px; margin-top: 10px;">
+                        <img src="./image/icon11.png" alt="web" width="60px" height="60px" style="margin-left: 40%; margin-bottom: 5px; margin-top: 10px;">
                         <p style="margin-bottom: 5px; text-align: center; color: darkblue; font-size: larger;"><b>E-commerce Development</b></p>
                     </div>
                     <div>
@@ -616,7 +706,7 @@ form.sign-in-form {
                            web store that are both unique and modern, which gives retail 
                            business an edge over their compititors.
                         </p>
-                        <a href="./commerce.html" style="text-decoration: none;"><div class="lost"><h6 style="text-align: center; padding-top: 10px;" ><b> Read more</b></h6></div>                        </a>
+                        <a href="./commerce.html" style="text-decoration: none;"><div class="lost"><h6 style="text-align: center;" ><b> Read more</b></h6></div>                        </a>
                     </div>
 
                 </div>
@@ -626,7 +716,7 @@ form.sign-in-form {
             <div class="project  animate__animated animate__fadeInUp">
                 <div class="let2">
                     <div style="margin-top: 15px;">
-                        <img src="./icon15.png" alt="web" width="60px" height="60px" style="margin-left: 40%; margin-bottom: 5px; margin-top: 10px;">
+                        <img src="./image/icon15.png" alt="web" width="60px" height="60px" style="margin-left: 40%; margin-bottom: 5px; margin-top: 10px;">
                         <p style="margin-bottom: 5px; text-align: center; color: darkblue; font-size: larger;"><b>Progressive Web App  Development</b></p>
                     </div>
                     <div>
@@ -635,7 +725,7 @@ form.sign-in-form {
                            enhanced performances, improve security and increase user access.
 
                         </p>
-                        <a href="./progressive.html" style="text-decoration: none;"><div class="lost"><h6 style="text-align: center; padding-top: 10px;" ><b> Read more</b></h6></div></a>
+                        <a href="./progressive.html" style="text-decoration: none;"><div class="lost"><h6 style="text-align: center;" ><b> Read more</b></h6></div></a>
                     </div>
 
                 </div>
@@ -645,7 +735,7 @@ form.sign-in-form {
             <div class="project  animate__animated animate__fadeInUp">
                 <div class="let3 ">
                     <div style="margin-top: 15px;">
-                        <img src="./icon3.png" alt="web" width="60px" height="60px" style="margin-left: 40%; margin-bottom: 5px; margin-top: 10px;">
+                        <img src="./image/icon3.png" alt="web" width="60px" height="60px" style="margin-left: 40%; margin-bottom: 5px; margin-top: 10px;">
                         <p style="margin-bottom: 5px; text-align: center; color: darkblue; font-size: larger;"><b>Moblie App Development</b></p>
                     </div>
                     <div>
@@ -654,7 +744,7 @@ form.sign-in-form {
                             Moblie app development. we organisation develop and mantain Moblie apps iphone, android
                             and ipad devices.
                         </p>
-                        <a href="./mobile.html" style="text-decoration: none;"> <div class="lost"><h6 style="text-align: center; padding-top: 10px;" ><b> Read more</b></h6></div> </a>
+                        <a href="./mobile.html" style="text-decoration: none;"> <div class="lost"><h6 style="text-align: center;" ><b> Read more</b></h6></div> </a>
                     </div>
 
                 </div>
@@ -664,7 +754,7 @@ form.sign-in-form {
             <div class="project  animate__animated animate__fadeInUp">
                 <div class="let4">
                     <div style="margin-top: 15px;">
-                        <img src="./icon6.png" alt="web" width="60px" height="60px" style="margin-left: 40%; margin-bottom: 5px; margin-top: 10px;">
+                        <img src="./image/icon6.png" alt="web" width="60px" height="60px" style="margin-left: 40%; margin-bottom: 5px; margin-top: 10px;">
                         <p style="margin-bottom: 5px; text-align: center; color: darkblue; font-size: larger;"><b>Enterprise Software Development</b></p>
                     </div>
                     <div>
@@ -673,7 +763,7 @@ form.sign-in-form {
                            we deliver efficient and scalable solutions for enterprise needs.
                            
                         </p>
-                        <a href="./enterprise.html" style="text-decoration: none;"><div class="lost"><h6 style="text-align: center; padding-top: 10px;" ><b> Read more</b></h6></div> </a>
+                        <a href="./enterprise.html" style="text-decoration: none;"><div class="lost"><h6 style="text-align: center;" ><b> Read more</b></h6></div> </a>
                     </div>
 
                 </div>
@@ -683,7 +773,7 @@ form.sign-in-form {
             <div class="project  animate__animated animate__fadeInUp">
                 <div class="let5">
                     <div style="margin-top: 15px;">
-                        <img src="./icon17.png" alt="web" width="60px" height="60px" style="margin-left: 40%; margin-bottom: 5px; margin-top: 10px;">
+                        <img src="./image/icon17.png" alt="web" width="60px" height="60px" style="margin-left: 40%; margin-bottom: 5px; margin-top: 10px;">
                         <p style="margin-bottom: 5px; text-align: center; color: darkblue; font-size: larger;"><b>Saas Application Development</b></p>
                     </div>
                     <div>
@@ -691,7 +781,7 @@ form.sign-in-form {
                            At BalogTech we develop saaS products using the most advanced tools and systems. we help client 
                            to build scalable saaS appllication from scratch or re-architech existing apps for saaS environment.
                         </p>
-                        <a href="./sass.html" style="text-decoration: none;"><div class="lost"><h6 style="text-align: center; padding-top: 10px;" ><b> Read more</b></h6></div>  </a>
+                        <a href="./sass.html" style="text-decoration: none;"><div class="lost"><h6 style="text-align: center;" ><b> Read more</b></h6></div>  </a>
 
                     </div>
 
@@ -702,7 +792,7 @@ form.sign-in-form {
             <div class="project  animate__animated animate__fadeInUp">
                 <div class="let6">
                     <div style="margin-top: 15px;">
-                        <img src="./icon4.png" alt="web" width="60px" height="60px" style="margin-left: 40%; margin-bottom: 5px; margin-top: 10px;">
+                        <img src="./image/icon4.png" alt="web" width="60px" height="60px" style="margin-left: 40%; margin-bottom: 5px; margin-top: 10px;">
                         <p style="margin-bottom: 5px; text-align: center; color: darkblue; font-size: larger;"><b>AI & Machine Learning Development</b></p>
                     </div>
                     <div>
@@ -712,7 +802,7 @@ form.sign-in-form {
                            highly proficient in SQL and  Python. we can also build cloud pipelines and provide 
                            AI tools Expertise.  
                         </p>
-                        <a href="./machine.html" style="text-decoration: none;"><div class="lost"><h6 style="text-align: center; padding-top: 10px;" ><b> Read more</b></h6></div>                        </a>
+                        <a href="./machine.html" style="text-decoration: none;"><div class="lost"><h6 style="text-align: center;" ><b> Read more</b></h6></div>  </a>
                     </div>
 
                 </div>
@@ -722,7 +812,7 @@ form.sign-in-form {
             <div class="project  animate__animated animate__fadeInUp">
                 <div class="let7">
                     <div style="margin-top: 15px;">
-                        <img src="./icon20.png" alt="web" width="60px" height="60px" style="margin-left: 40%; margin-bottom: 5px; margin-top: 10px;">
+                        <img src="./image/icon20.png" alt="web" width="60px" height="60px" style="margin-left: 40%; margin-bottom: 5px; margin-top: 10px;">
                         <p style="margin-bottom: 5px; text-align: center; color: darkblue; font-size: larger;"><b>Cloud Computing Service</b></p>
                     </div>
                     <div>
@@ -732,7 +822,7 @@ form.sign-in-form {
                            elastic, cost-efficient and secure
 
                         </p>
-                        <a href="./cloud.html" style="text-decoration: none;"> <div class="lost"><h6 style="text-align: center; padding-top: 10px;" ><b> Read more</b></h6></div>                        </a>
+                        <a href="./cloud.html" style="text-decoration: none;"> <div class="lost"><h6 style="text-align: center;" ><b> Read more</b></h6></div>                        </a>
                     </div>
 
                 </div>
@@ -743,7 +833,7 @@ form.sign-in-form {
             <div class="project  animate__animated animate__fadeInUp" style="margin-bottom: 40px;">
                 <div class="let8">
                     <div style="margin-top: 15px;">
-                        <img src="./icon19.png" alt="web" width="60px" height="60px" style="margin-left: 40%; margin-bottom: 5px; margin-top: 10px;">
+                        <img src="./image/icon19.png" alt="web" width="60px" height="60px" style="margin-left: 40%; margin-bottom: 5px; margin-top: 10px;">
                         <p style="margin-bottom: 5px; text-align: center; color: darkblue; font-size: larger;"><b>Marketplace Software Development</b></p>
                     </div>
                     <div>
@@ -753,7 +843,7 @@ form.sign-in-form {
                            Technology to produce secure, scalable and user friendly solutions. 
                          
                         </p>
-                        <a href="./marketplace.html" style="text-decoration: none;"> <div class="lost"><h6 style="text-align: center; padding-top: 10px;" ><b> Read more</b></h6></div>                        </a>
+                        <a href="./marketplace.html" style="text-decoration: none;"> <div class="lost"><h6 style="text-align: center; " ><b> Read more</b></h6></div>                        </a>
                     </div>
 
                 </div>
@@ -773,7 +863,7 @@ form.sign-in-form {
                   Glance Thourgh Our Web and Moblie  App Project 
               </h5>
               <div style="text-align: center; margin-bottom: 20px;">
-                  <img src="./crypto33.png" width="80%" height="200px" style="border-radius: 10px;">
+                  <img src="./image/crypto33.png" width="80%" height="200px" style="border-radius: 10px;">
               </div>
 
               <div>
@@ -790,9 +880,9 @@ form.sign-in-form {
                   
 
                 <div style="padding-left: 10px; padding-right: 10px;">
-                    <p style="margin: 0;color: white;"><b>Progressive Web Development</b></p>
-                    <p style="margin: 0;color: white;"> <b>UI/UX Design</b></p>
-                    <p style="margin: 0;color: white;"><b>Branding</b></p>
+                    <li style="margin: 0;color: white;"><b>progressive Web Development</b></li>
+                    <li style="margin: 0;color: white;"> <b>UI/UX Design</b></li>
+                    <li style="margin: 0;color: white;"><b>Branding</b></li>
                 </div>
                 
                 
@@ -803,7 +893,7 @@ form.sign-in-form {
 
       <div class="soft1">
         <div style="text-align: center; margin-bottom: 20px; margin-top: 70px;">
-            <img src="./logistics.png" width="80%" height="200px" style="border-radius: 10px;">
+            <img src="./image/logistics.png" width="80%" height="200px" style="border-radius: 10px;">
         </div>
 
         <div>
@@ -830,7 +920,7 @@ form.sign-in-form {
 
       <div class="soft2">
         <div style="text-align: center; margin-bottom: 20px; margin-top: 70px;">
-            <img src="./estate.png" width="80%" height="200px" style="border-radius: 10px;">
+            <img src="./image/estate.png" width="80%" height="200px" style="border-radius: 10px;">
         </div>
 
         <div>
@@ -856,7 +946,7 @@ form.sign-in-form {
 
       <div class="soft3">
         <div style="text-align: center; margin-bottom: 20px; margin-top: 70px;">
-            <img src="./education.png" width="80%" height="200px" style="border-radius: 10px;">
+            <img src="./image/education.png" width="80%" height="200px" style="border-radius: 10px;">
         </div>
 
         <div>
@@ -907,7 +997,7 @@ form.sign-in-form {
              
                <div class="lost" >
                     <a href="email.html" style="text-decoration: none;">
-                      <p style="text-align: center; padding-top: 5px; color: darkblue;"><b>Support Team </b></p>
+                      <p style="text-align: center; color: darkblue;"><b>Support Team </b></p>
 
                     </a>
               </div>  
@@ -937,79 +1027,85 @@ form.sign-in-form {
              </p>
 
              <div class="lost">
-              <p style="text-align: center; padding-top: 5px;"><b>Developer's Team</b></p>
+              <p style="text-align: center;"><b>Developer's Team</b></p>
              </div>  
 
 
      <!-- Ending section Speech on Hiring our engineer  -->
 
-<section>
-  <div>
-    <h1 style="text-align: center; color: darkblue;"> A success Driven Approach</h1>
-  </div>
-    <div class="object" >
-      <div class="obj">
-         <div style="padding-left: 5px; padding-right: 5px; text-align: center; padding-top: 10px; padding-bottom: 10px;">
-          <p style="margin: 0;"><b>The Vision </b></p>
-          <p style="margin: 0;">
-            Successful products are never made alone. We work as one team with 
-            our partners to proudly create products that people will love.
-          </p>
-  
-         </div>
-      </div>
-      <div class="obj">
-        <div  style="padding-left: 5px;  padding-right: 5px; text-align: center; padding-top: 10px; padding-bottom: 10px;" >
-          <p style="margin: 0;"><b> Strategy </b></p>
-          <p style="margin: 0;">
-            No successful product is created without proper research. We dig into both the competitive and the technological landscape
-             to make sure that your app is cutting-edge on every front.
-          </p>
-  
-        </div>
-      </div>
-      <div class="obj">
-        <div style="padding-left: 5px; padding-right: 5px; text-align: center; padding-top: 10px; padding-bottom: 10px;">
-          <p style="margin: 0;"><b>Top Nouch Design</b> </p>
-          <p style="margin: 0;">
-            Our team collaborates and designs user journeys and wireframes to develop an unrivaled view of the user experience. When a seamless
-             UX intersects with a richly designed UI, we all win.
-          </p>
-  
-        </div>
 
-      </div>
-      <div class="obj">
-        <div style="padding-left: 5px; padding-right: 5px; text-align: center; padding-top: 10px; padding-bottom: 10px;">
-          <p style="margin: 0;"> <b>Deployment & Testing</b></p>
-          <p style="margin: 0;"> With full-stack development expertise, our team is as robust as they are talented. We are continuously testing throughout the development phase of the project to ensure that only the highest
-             quality is delivered for your final product.</p>
-  
-        </div>
 
+<!-- <article>
+
+  <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist" style="background-color: orange; padding-left: 10px; padding-right: 10px; width: 100%; text-align: center; border-radius: 20px;">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" style="border-radius: 20px;" role="tab" aria-controls="pills-home" aria-selected="true">Vision</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" style="border-radius: 20px;" role="tab" aria-controls="pills-profile" aria-selected="false">Strategy</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" style="border-radius: 20px;" role="tab" aria-controls="pills-contact" aria-selected="false">Designs</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" style="border-radius: 20px;" role="tab" aria-controls="pills-contact" aria-selected="false">Testing</button>
+    </li>
+  </ul>
+  <div class="tab-content" id="pills-tabContent">
+    <div style="display: flex;" class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-vision-tab">
+      <div style="width: 50%; padding-left: 10px; padding-right: 10px;">
+        <img src="./designs.gif" width="90%" alt="">
       </div>
-      <div class="obj">
-      <div style="padding-left: 5px; padding-right: 5px; text-align: center; padding-top: 10px; padding-bottom: 10px;">
-        <p style="margin: 0;"> <b> Building for growth & stability</b></p>
-        <p style="margin: 0;">
-          Once your app launches, it’s not over. We’re here to support your app post-release with maintenance and improvement so that 
-          the number of happy users continues to grow.
+
+      <div style="width: 50%;">
+        <p style="padding-left: 10px; padding-right: 10px;">
+          Successful products are never made alone. We work as one team with 
+          our partners to proudly create products that people will love.
+  
         </p>
-      </div>
-      </div>
+  
+       </div>
 
-
-        
     </div>
 
+    <div class="tab-pane fade" style="display: flex; " id="pills-profile" role="tabpanel" aria-labelledby="pills-strategy-tab">
+     
+       <div style="width: 50%; padding-left: 10px; padding-right: 10px;">
+         <img src="./designs.gif" width="90%" alt="">
+       </div>
+
+       <div style="width: 50%;">
+        <p style="padding-left: 10px; padding-right: 10px;">
+          No successful product is created without proper research. We dig into both the competitive and the technological landscape
+          to make sure that your app is cutting-edge on every front.
+  
+        </p>
+       </div>
+     </div>
+    
+
+    <div class="tab-pane fade" style="display: flex;" id="pills-contact" role="tabpanel" aria-labelledby="pills-designs-tab">
+     <div>
+      <p>
+        Our team collaborates and designs user journeys and wireframes to develop an unrivaled view of the user experience. When a seamless
+        UX intersects with a richly designed UI, we all win.
+
+      </p>
+
+     </div>
+    </div>
+    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-testing-tab">
+      <p>
+        With full-stack development expertise, our team is as robust as they are talented. We are continuously testing throughout the development phase of the project to ensure that only the highest
+             quality is delivered for your final product.
+      </p>
+    </div>
+  </div>
+  
+</article>
 
 
-
-
-</section>
-
-
-
+ -->
 
 
 

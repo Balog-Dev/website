@@ -1130,12 +1130,737 @@ form.sign-in-form {
                   
   </section>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+.america, .london, .japan{
+  display: flex;
+  width: 100%;
+
+}
+.mot1, .mot2, .mot3, 
+.mot4, .mot5, .mot6,
+.mot7, .mot8, .mot9{
+  width: 30%;
+  background-color: white;
+  border-radius: 10px;
+  margin: 15px;
+  height: 300px;
+}
+#aeroplane{
+  padding-left: 3%;
+  padding-right: 1%;
+}
+
+.let, .let1, .let2{
+  width: 90% !important;
+  
+}
+.lg1, .lg2, .lg3{
+  width: 30%;
+}
+.contry{
+  width: 15%;
+  background-color: orange;
+  height: 60px;
+  border-radius: 0px 30px 30px  30px;
+  margin-left: 40%;
+}
+.contry:hover{
+  background-color: darkblue;
+  
+}
+.lont{
+  width: 100%;
+  background-color: darkblue;
+  height: 300px;
+  border-top-left-radius: 20%;
+  border-top-right-radius: 20%;
+}
+.container-fluid{
+     background-color: rgb(255, 255, 255); 
+    height: 70px;
+    color: black;
+}
+.nav-link:hover{
+    color: gold;
+}
+
+
+
+.pix{
+    width: 25px;
+    height: 20px;
+}
+.pix:hover > .pix{
+    color: goldenrod;
+}
+#drop{
+    display: none;
+    background-color: whitesmoke;
+    
+}
+#tem:hover > #drop{
+    display: flex;
+    border: none;
+}
+p{
+    color: gray;
+}
+#drop2{
+    display: none;
+    background-color: white;
+    border: none;
+
+}
+#tem2:hover > #drop2{
+    display: grid;
+}
+#drop3{
+    display: none;
+    background-color: white;
+    
+    
+
+}
+#tem3:hover > #drop3{
+    display: grid;
+    border: none;
+}
+#drop4{
+    display: none;
+    background-color: white;
+}
+#tem4:hover > #drop4{
+    display: grid;
+    border: none;
+}
+#drop5{
+    display: none;
+    background-color: white;
+    border: none;
+}
+#tem5:hover > #drop5{
+    display: grid;
+    border: none;
+}
+#drop6{
+    display: none;
+    background-color: white;
+    border: none;
+}
+#tem6:hover > #drop6{
+    display: grid;
+    border: none;
+}
+
+
+
+.layout{
+    background-color: rgb(254, 246, 216);
+    height: 40px;
+}
+.btc{
+    background-color: white;
+    background-image: url(./bbk.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    padding-left: 65px;
+    padding-top: 120px;
+}
+.maque{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+
+.jara{
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    height: 200px;
+    border-radius: 30px;
+}
+.medical{
+    padding-left: 30px;
+}
+#mentor{
+    padding: 35px;
+}
+.tour:hover{
+    background-color: lightgray;
+}
+.gent{
+    display: flex;
+    justify-content: space-between;
+}
+.login{
+    margin: 15px;
+}
+.local{
+    width: 60px;
+    height: 50px;
+    background-color: red;
+}
+#cry{
+  margin: 0;
+}
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!-- desktop view large screen -->
-  <section class="desktop">
-<h1>
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam ex rem, praesentium optio, adipisci officiis hic non ut, porro distinctio temporibus
-     cum minus nam fugiat modi itaque sapiente et impedit.
-</h1>
+ <section class="desktop">
+    <!-- first list on dotted -->
+    <div class="container-fluid" >
+      <ul class="nav nav-pills">
+          <li class="nav-item">
+           <img src="./image/mylogo-removebg-preview.png" width="40%" alt="">
+          </li>
+          <li class="nav-item dropdown" id="tem">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false" ><p>WEB DEVELOPMEMT</p></a>
+            <ul class="dropdown-menu" id="drop">
+             <!-- <div class="list1" >
+              <li><a class="dropdown-item" href="#"><h6> Exchange </h6> <p>Blockchain and crypo assest exchange</p></a></li>
+              <li><a class="dropdown-item" href="#"><h6>Institutional service</h6><p>Institutional and VIP Training </p></a></li>
+              <li><a class="dropdown-item" href="#"><h6> DEX</h6><p>Fast and secure decentralized digital asset exchange </p></a></li>
+              <li><a class="dropdown-item" href="#"><h6> Research </h6><p>Institutional-grades analysis and report</p></a></li>
+             </div> -->
+             <div class="list1">
+              <li><a class="dropdown-item" href="#"><p id="cry">Fullstack Development </p></a></li>
+              <li><a class="dropdown-item" href="#"><p id="cry">Saas Development</p></a></li>
+              <li><a class="dropdown-item" href="#"><p id="cry">Digital Transformation Services </p></a></li>
+              <li><a class="dropdown-item" href="#"><p id="cry">React.js Development </p></a></li>
+              <li><a class="dropdown-item" href="#"><p id="cry">Anjular.js Development </p></a></li>
+              <li><a class="dropdown-item" href="#"><p id="cry">Vue.js Development </p></a></li>
+              <li><a class="dropdown-item" href="#"><p id="cry">Firebase Development </p></a></li>
+              <li><a class="dropdown-item" href="#"><p id="cry">E-commerce web Development </p></a></li>
+
+             </div>   
+               
+             
+          </ul>
+          </li>
+          <!-- second dropdown -->
+          <li class="nav-item dropdown" id="tem2">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false" style="color: black;">MOBILE DEVELOPMEMT</a>
+              <ul class="dropdown-menu" id="drop2">
+                <li><a class="dropdown-item" href="#"><p id="cry">iOs App Development</p> </a></li>
+                <li><a class="dropdown-item" href="#"><p id="cry">Android App Development</p></a></li>
+                <li><a class="dropdown-item" href="#"><p id="cry">Progressive Web Development</p></a></li>
+                <li><a class="dropdown-item" href="#"><p id="cry">React-Native App Development</p></a></li>
+                <li><a class="dropdown-item" href="#"><p id="cry">Hybrid App Development</p></a></li>
+                <li><a class="dropdown-item" href="#"> <p id="cry">Tablet App Development</p></a></li>
+  
+              </ul>
+              <!-- market button -->
+              <li class="nav-item dropdown" id="tem2">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false" style="color: black;">ENTERPRISE DEVELOPMEMT</a>
+                <ul class="dropdown-menu" id="drop2">
+                  <li><a class="dropdown-item" href="#"><p id="cry">Web Data Extraction Scraping</p> </a></li>
+                  <li><a class="dropdown-item" href="#"><p id="cry">Big Data and Business Intelligence</p></a></li>
+                  <li><a class="dropdown-item" href="#"><p id="cry">Aws Serverless Computing</p></a></li>
+                  <li><a class="dropdown-item" href="#"><p id="cry">Robotics Process Computing</p></a></li>
+                  <li><a class="dropdown-item" href="#"><p id="cry"> DevOps Services</p></a></li>
+                  <li><a class="dropdown-item" href="#"><p id="cry">Cloud Computing Services</p></a></li>
+                  <li><a class="dropdown-item" href="#"><p id="cry">Custom Software Development</p></a></li>
+                  <li><a class="dropdown-item" href="#"><p id="cry">Blockchain Development</p></a></li>
+    
+                </ul>
+    
+                <!-- Trade dropdwn -->
+            <li class="nav-item dropdown" id="tem3">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false" style="color: black;">Trade</a>
+              <ul class="dropdown-menu" id="drop3">
+                <li><a class="dropdown-item" href="#"><h6><img src="./t1.png" alt=""> Convert</h6><p>The easiest way to Trade </p></a></li>
+                <li><a class="dropdown-item" href="#"><h6><img src="./t2.png" alt=""> Classic</h6><p>Simple and easy-to-use Interface </p></a></li>
+                <li><a class="dropdown-item" href="#"><h6><img src="./t3.png" alt=""> Advances</h6><p>Full access to all Trading Tools </p></a></li>
+                <li><a class="dropdown-item" href="#"><h6><img src="./t4.png" alt=""> Margin </h6><p>Increase Your Profit with Leverage </p></a></li>
+                <li><a class="dropdown-item" href="#"><h6><img src="./t5.png" alt=""> P2P</h6><p>Bank Trasfer to 100+ Optipons </p></a></li>
+                <li><a class="dropdown-item" href="#"><h6><img src="./t6.png" alt=""> Stock Token</h6><p>Trade Stocks with Crypto </p></a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown" id="tem4">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false" style="color: black;">Deratives</a>
+              <ul class="dropdown-menu" id="drop4">
+                <li><a class="dropdown-item" href="#"><h6><img src="./d1.png" alt=""> Binance Futures Overview</h6><p>View our full range of crypto-derivatives <br> instrument </p></a></li>
+                <li><a class="dropdown-item" href="#"><h6><img src="./d2.png" alt=""> Responsive Trading</h6><p>Learn how you could pratice resposible <br> trading with Binance Futures </p> </a></li>
+                <li><a class="dropdown-item" href="#"><h6><img src="./d3.png" alt=""> USD-@-M Futures</h6><p>Perpetual or Quaaterly Contracts Settled in <br> USDT or BUSD </p></a></li>
+                <li><a class="dropdown-item" href="#"><h6><img src="./d4.png" alt=""> COIN-M Futures</h6><p>Perpetual or Quaaterly ontracts Settled in <br> Cryptocurrency</p></a></li>
+                <li><a class="dropdown-item" href="#"><h6><img src="./d5.png" alt=""> Vanilla Options</h6><p>Buy and Sell European-style Vanila options</p></a></li>
+                <li><a class="dropdown-item" href="#"><h6><img src="./d6.png" alt=""> Leveraged Tokens</h6><p>Enjoy Increased leverage without risk of liquidation </p></a></li>
+                <li><a class="dropdown-item" href="#"><h6><img src="./d7.png" alt=""> Battle</h6><p>Battle to Win. Long vs Short</p></a></li>
+  
+              </ul>
+            </li>
+            <li class="nav-item dropdown" id="tem5">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="botton" aria-expanded="false" style="color: black;">Finance</a>
+              <ul class="dropdown-menu" id="drop5">
+                <li><a class="dropdown-item" href="#"><h6><img src="./f1.png" alt=""> Binance Earn</h6><p>One-stop Investment Solution</p></a></li>
+                <li><a class="dropdown-item" href="#"><h6><img src="./f2.png" alt=""> Binance Pool</h6><p>Mine More Reward by connecting to the pool </p></a></li>
+                <li><a class="dropdown-item" href="#"><h6><img src="./f3.png" alt=""> Binance Visa Card </h6><p>Convert and pay with Crypto Worldwide</p></a></li>
+                <li><a class="dropdown-item" href="#"><h6><img src="./f4.png" alt=""> Crypto Loans</h6><p>Get an Instant Loan Secured by Crypto assests </p></a></li>
+                <li><a class="dropdown-item" href="#"><h6><img src="./f5.png" alt=""> Liquid Swap</h6><p>Become a Liquidity Provider & Earn double</p></a></li>
+                <li><a class="dropdown-item" href="#"><h6><img src="./f6.png" alt=""> Binance Pay</h6><p>Send and Spend crypto at Zero fees </p></a></li>
+              </ul>
+            </li>
+  
+                <!-- log in section -->
+                <li class="nav-item">
+                  <a class="nav-link" href="#" style="color: black;">Log In</a>
+                </li>
+                <button type="button" class="btn btn-warning">HIRE US</button>
+  
+        </ul>
+      </div>  
+  
+
+<div id="aeroplane">
+
+
+  <div class="america">
+    <div class="mot1">
+      <div  >
+          <div style="margin-top: 15px;">
+              <img src="./image/icon2.png" alt="web" width="60px" height="60px" style="margin-left: 40%; margin-bottom: 5px; margin-top: 10px;">
+              <p id="air1" style="margin-bottom: 5px; text-align: center; color: darkblue; font-size: larger;"><b>Web Design &  Development</b></p>
+          </div>
+          <div>
+              <p style="font-size: 13px;  padding-left: 10px; padding-right: 10px; margin-bottom: 6; text-align: center; color: grey;">
+                  Start your project from Scratch or improve
+                  your existing website, BalogTech is here to raise your online presence.
+                  we do web apps & Development accross various platform
+              </p>
+              <a href="./web.html"  style="text-decoration: none;"> <div class="lost"><h6 style="text-align: center;" ><b> Read more</b></h6></div></a>
+          </div>
+      </div>
+
+  </div>
+
+  <div class="mot2" >
+      <div >
+          <div style="margin-top: 15px;">
+              <img src="./image/icon11.png" alt="web" width="60px" height="60px" style="margin-left: 40%; margin-bottom: 5px; margin-top: 10px;">
+              <p style="margin-bottom: 5px; text-align: center; color: darkblue; font-size: larger;"><b>E-commerce Development</b></p>
+          </div>
+          <div>
+              <p style="font-size: 13px; padding-left: 10px; padding-right: 10px; margin-bottom: 6; text-align: center; color: grey;">
+                 BalogTech deliver E-commerce development services which allows 
+                 everyone to engage with their client effortlessly. we create professional 
+                 web store that are both unique and modern, which gives retail 
+                 business an edge over their compititors.
+              </p>
+              <a href="./commerce.html" style="text-decoration: none;"><div class="lost"><h6 style="text-align: center;" ><b> Read more</b></h6></div>                        </a>
+          </div>
+
+      </div>
+
+  </div>
+
+  <div class="mot3" >
+      <div >
+          <div style="margin-top: 15px;">
+              <img src="./image/icon15.png" alt="web" width="60px" height="60px" style="margin-left: 40%; margin-bottom: 5px; margin-top: 10px;">
+              <p style="margin-bottom: 5px; text-align: center; color: darkblue; font-size: larger;"><b>Progressive Web App  Development</b></p>
+          </div>
+          <div>
+              <p style="font-size: 13px; padding-left: 10px; padding-right: 10px; margin-bottom: 6; text-align: center; color: grey;">
+                 Progressive apps are the future. we develop PWA's with a smoothy user experience,
+                 enhanced performances, improve security and increase user access.
+
+              </p>
+              <a href="./progressive.html" style="text-decoration: none;"><div class="lost"><h6 style="text-align: center;" ><b> Read more</b></h6></div></a>
+          </div>
+
+      </div>
+
+  </div>
+
+  </div>
+
+
+
+  <div class="london">
+    <div class="mot4" >
+      <div >
+          <div style="margin-top: 15px;">
+              <img src="./image/icon3.png" alt="web" width="60px" height="60px" style="margin-left: 40%; margin-bottom: 5px; margin-top: 10px;">
+              <p style="margin-bottom: 5px; text-align: center; color: darkblue; font-size: larger;"><b>Moblie App Development</b></p>
+          </div>
+          <div>
+              <p style="font-size: 13px; padding-left: 10px; padding-right: 10px; margin-bottom: 6; text-align: center; color: gray;">
+                  Convert your idea into a Moblie apps or take existing your business Moblie width
+                  Moblie app development. we organisation develop and mantain Moblie apps iphone, android
+                  and ipad devices.
+              </p>
+              <a href="./mobile.html" style="text-decoration: none;"> <div class="lost"><h6 style="text-align: center;" ><b> Read more</b></h6></div> </a>
+          </div>
+
+      </div>
+
+  </div>
+
+  <div class="mot5">
+      <div >
+          <div style="margin-top: 15px;">
+              <img src="./image/icon6.png" alt="web" width="60px" height="60px" style="margin-left: 40%; margin-bottom: 5px; margin-top: 10px;">
+              <p style="margin-bottom: 5px; text-align: center; color: darkblue; font-size: larger;"><b>Enterprise Software Development</b></p>
+          </div>
+          <div>
+              <p style="font-size: 13px; padding-left: 10px; padding-right: 10px; margin-bottom: 6; text-align: center; color: grey;">
+                 Acheive  your enterprise goals with custom reliable enterprise software development.
+                 we deliver efficient and scalable solutions for enterprise needs.
+                 
+              </p>
+              <a href="./enterprise.html" style="text-decoration: none;"><div class="lost"><h6 style="text-align: center;" ><b> Read more</b></h6></div> </a>
+          </div>
+
+      </div>
+
+  </div>
+
+  <div class="mot6" >
+      <div >
+          <div style="margin-top: 15px;">
+              <img src="./image/icon17.png" alt="web" width="60px" height="60px" style="margin-left: 40%; margin-bottom: 5px; margin-top: 10px;">
+              <p style="margin-bottom: 5px; text-align: center; color: darkblue; font-size: larger;"><b>Saas Application Development</b></p>
+          </div>
+          <div>
+              <p style="font-size: 13px; padding-left: 10px; padding-right: 10px; margin-bottom: 6; text-align: center; color: grey;">
+                 At BalogTech we develop saaS products using the most advanced tools and systems. we help client 
+                 to build scalable saaS appllication from scratch or re-architech existing apps for saaS environment.
+              </p>
+              <a href="./sass.html" style="text-decoration: none;"><div class="lost"><h6 style="text-align: center;" ><b> Read more</b></h6></div>  </a>
+
+          </div>
+
+      </div>
+
+  </div>
+
+
+
+
+  </div>
+
+
+  <div class="japan">
+    
+    <div class="mot7">
+      <div >
+          <div style="margin-top: 15px;">
+              <img src="./image/icon4.png" alt="web" width="60px" height="60px" style="margin-left: 40%; margin-bottom: 5px; margin-top: 10px;">
+              <p style="margin-bottom: 5px; text-align: center; color: darkblue; font-size: larger;"><b>AI & Machine Learning Development</b></p>
+          </div>
+          <div>
+              <p style="font-size: 13px; padding-left: 10px; padding-right: 10px; margin-bottom: 6; text-align: center; color: grey;">
+                 We use big data-driven analytics and Ai intellengent to provide client 
+                 with deeper and more relevant insight for the decision making. we are 
+                 highly proficient in SQL and  Python. we can also build cloud pipelines and provide 
+                 AI tools Expertise.  
+              </p>
+              <a href="./machine.html" style="text-decoration: none;"><div class="lost"><h6 style="text-align: center;" ><b> Read more</b></h6></div>  </a>
+          </div>
+
+      </div>
+
+  </div>
+
+  <div class="mot8">
+      <div >
+          <div style="margin-top: 15px;">
+              <img src="./image/icon20.png" alt="web" width="60px" height="60px" style="margin-left: 40%; margin-bottom: 5px; margin-top: 10px;">
+              <p style="margin-bottom: 5px; text-align: center; color: darkblue; font-size: larger;"><b>Cloud Computing Service</b></p>
+          </div>
+          <div>
+              <p style="font-size: 13px; padding-left: 10px; padding-right: 10px; margin-bottom: 6; text-align: center; color: grey;">
+                 Transform your business and implement digital strategies with public, private
+                 and Hybrid cloud intergration. Cloud Technology allows youe business to be extensible,
+                 elastic, cost-efficient and secure
+
+              </p>
+              <a href="./cloud.html" style="text-decoration: none;"> <div class="lost"><h6 style="text-align: center;" ><b> Read more</b></h6></div>                        </a>
+          </div>
+
+      </div>
+
+  </div>
+
+
+  <div class="mot9">
+      <div >
+          <div style="margin-top: 15px;">
+              <img src="./image/icon19.png" alt="web" width="60px" height="60px" style="margin-left: 40%; margin-bottom: 5px; margin-top: 10px;">
+              <p style="margin-bottom: 5px; text-align: center; color: darkblue; font-size: larger;"><b>Marketplace Software Development</b></p>
+          </div>
+          <div>
+              <p style="font-size: 13px; padding-left: 10px; padding-right: 10px; margin-bottom: 6; text-align: center; color: grey;">
+                 Our multi-vendor Marketplace development team specializes in transforming
+                 business into reality simplifying inline Marketplace development using cutting-edge 
+                 Technology to produce secure, scalable and user friendly solutions. 
+               
+              </p>
+              <a href="./marketplace.html" style="text-decoration: none;"> <div class="lost"><h6 style="text-align: center; " ><b> Read more</b></h6></div>                        </a>
+          </div>
+
+      </div>
+
+  </div>
+
+  </div>
+
+
+</div>
+
+
+
+
+      <!-- Hilight on product and different software  -->
+      <h1 style="text-align: center; color: darkblue; margin-bottom: 20px;">
+        Glance Thourgh Our Web and Moblie  App Project 
+    </h1>
+
+      <div class="soft">
+
+        <div class="launch" style="margin-top: 20px; display: flex;">
+
+            <div style="text-align: center; margin-bottom: 20px; width: 50%;">
+                <img src="./image/crypto33.png" width="80%" height="500px" style="border-radius: 10px;">
+            </div>
+
+            <div style="width: 50%;"> 
+              <br><br><br>
+                <h2 style="margin-bottom: 10px;  color: white;"><b>Crpto Web Development</b></h2>
+
+                <p style="font-size: 20px; padding-left: 10px; padding-right: 10px; color: white;">
+                   <b>
+                      Crypto web is a based Saas (Software as a service) platform
+                      that is built on NFTs, User Dashboard, P2p, Easy & Transferable platform
+                      and High Security Encrytion..
+                   </b>
+                </p>
+                 
+                
+
+              <div style="padding-left: 10px; padding-right: 10px;">
+                  <li style="margin: 0;color: white;"><b>progressive Web Development</b></li>
+                  <li style="margin: 0;color: white;"> <b>UI/UX Design</b></li>
+                  <li style="margin: 0;color: white;"><b>Branding</b></li>
+              </div>
+              
+              
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="soft1" style="display: flex;">
+
+      <div style="width: 50%; text-align: center; margin-bottom: 20px; margin-top: 30px;">
+          <img src="./image/logistics.png" width="80%" height="500px" style="border-radius: 10px;">
+      </div>
+
+      <div style="width: 50%;">
+        <br><br><br><br>
+          <h2 style="margin-bottom: 10px;  color: white;"><b>Logistic Web Development</b></h2>
+
+          <p style="font-size: 20px; padding-left: 10px; padding-right: 10px; color: white;">
+             <b>
+                Crypto web is a based Saas (Software as a service) platform
+                that is built on NFTs, User Dashboard, P2p, Easy & Transferable platform
+                and High Security Encrytion..
+             </b>
+          </p>
+           
+         <div class="list">
+          <ul style="color: white;">
+              <li><b>Progressive Web Development</b></li>
+              <li> <b>UI/UX Design</b></li>
+              <li><b>Branding</b></li>
+          </ul>
+         </div>
+      </div>
+
+    </div>
+
+    <div class="soft2" style="display: flex;">
+      <div style="text-align: center; margin-bottom: 20px; margin-top: 30px; width: 50%;">
+          <img src="./image/estate.png" width="80%" height="500px" style="border-radius: 10px;">
+      </div>
+
+      <div style="width: 50%;">
+        <br><br><br><br>
+          <h2 style="margin-bottom: 10px; color: white;"><b>Real Estate Web Development</b></h2>
+
+          <p style="font-size: 20px; padding-left: 10px; padding-right: 10px; color: white;">
+             <b>
+                Crypto web is a based Saas (Software as a service) platform
+                that is built on NFTs, User Dashboard, P2p, Easy & Transferable platform
+                and High Security Encrytion..
+             </b>
+          </p>
+           
+          <ul style="color: white;">
+              <li><b>Progressive Web Development</b></li>
+              <li> <b>UI/UX Design</b></li>
+              <li><b>Branding</b></li>
+          </ul>
+      </div>
+
+    </div>
+
+
+    <div class="soft3" style="display: flex;">
+      <div style="text-align: center; margin-bottom: 20px; margin-top: 30px; width: 50%;">
+          <img src="./image/education.png" width="80%" height="500px" style="border-radius: 10px;">
+      </div>
+
+      <div style="width: 50%;">
+        <br><br><br><br>
+          <h2 style="margin-bottom: 10px;  color: white;"><b>Education Web Development</b></h2>
+
+          <p style="font-size: 20px; padding-left: 10px; padding-right: 10px; color: white;">
+             <b>
+                Crypto web is a based Saas (Software as a service) platform
+                that is built on NFTs, User Dashboard, P2p, Easy & Transferable platform
+                and High Security Encrytion..
+             </b>
+          </p>
+           
+          <ul style="color: white;">
+              <li><b>Progressive Web Development</b></li>
+              <li> <b>UI/UX Design</b></li>
+              <li><b>Branding</b></li>
+          </ul>
+
+          
+      </div>
+
+    </div>
+
+
+   <!--  Ending section of Hilight on product and different software  -->
+
+        <!-- Balogtech delivery strategy statement -->
+        <div class="state">
+          <div style="margin-top: 20px; ">
+      
+              <h1 style="text-align: center; margin-bottom: 30px; color: darkblue;">
+               <b>  BalogTech Promises Uniqueness, Digital Transformation and Lot More...  </b>
+              </h1>
+  
+              <p style="text-align: center; padding-left: 20px; padding-right: 20px; font-size: 25px; font-weight: 300;color: grey;">
+               <b>
+                  At BalogTech  we pride ourselves on delivery custom solutions, for both startups and 
+                  leading brands, from strategyto UI/UX designs to digital prototypes, we are an Award-winning 
+                  Full-service Development Company in Nigeria with Expert in designing and Developing, Innovative Moblie and 
+                  Web services for all devices, with strong focus on Emerging Technologies ( AI, Voice,Data, Blockchain etc).
+                  Our Team is here to lead the Growth of your Next Successful  Project.
+  
+               </b>
+  
+              </p>
+               
+                 <div class="contry" >
+                      <a href="email.html" style="text-decoration: none;">
+                        <p id="bat" style="text-align: center; color: darkblue; padding-top: 15px;"><b>Support Team </b></p>
+  
+                      </a>
+                </div>  
+          </div>
+      </div>
+  
+      
+  
+       <!-- Balogtech delivery strategy statement -->
+
+
+
+            <!-- Speech on Hiring our engineer  -->
+     <div class="hire" style="margin-top: 30px;">
+      <div class="engine">
+          <h1 style="text-align: center; margin-bottom: 20px; color: darkblue;">
+             <b>
+                 Hire Dedicated, Affordable and Expert Developers From BalogTech Team...
+
+             </b>
+          </h1>
+          <p style="padding-right: 20px; padding-left: 20px; text-align: center; font-size: 25px; color: gray;">
+              If you are looking for dedicated Developers to help you build your Next 
+              Big Project. BalogTech Team is the best choice for you, BalogTech Provides Customized solution for you 
+              Business by Providing Development services that are tailored to meet your needs. We have Excellent Team of Web Developers 
+              and Project Managers who will help you develop your website and App. 
+          </p>
+
+          <div class="contry">
+           <p id="bat" style="text-align: center; color: darkblue; padding-top: 15px;"><b>Developer's Team</b></p>
+          </div>  
+
+
+  <!-- Ending section Speech on Hiring our engineer  -->
+
+
+       <!-- Contant address of company -->
+       <div class="lont" style="margin-top: 40px;">
+        
+      </div>
+      <!-- Ending  contant address of company -->
+ 
+
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+</section>
 
 
 

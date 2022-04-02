@@ -46,16 +46,34 @@
 .lost{
             background-color: orange;
             color: darkblue;
-            border-radius: 5px;
+            border-radius: 0px 30px 30px 30px;
             border: none;
             margin-left: 30%;
-            height: 40px;
+            height: 50px;
             width: 40%;
         }
           .lost:hover{
             background-color: darkblue;
             color: white;
         }
+        #wif{
+  background-color: whitesmoke;
+  margin: 5px;
+  border-radius: 10px;
+  height: 50px;
+  
+}
+#wif:hover{
+  background-color: darkblue;
+}
+#act:active{
+  color: white !important;
+
+}
+p{
+  color: gray;
+}
+
 
 
 
@@ -65,10 +83,85 @@
 
 
     <section class="design">
-        <nav style="height: 50px; background-color: white;">
-            jjjj
-       </nav>
+        <nav class="navbar navbar-light bg-light fixed-top">
+            <div class="container-fluid">
+              <div style="display: flex;">
+              <a class="navbar-brand" href="#">
+                <img src="./image/mylogo-removebg-preview.png" width="40%" alt="">
 
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+
+
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                    <img src="./image/mylogo-removebg-preview.png" width="40%"  alt="">
+
+                  </h5>
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item" id="wif">
+                      <a class="nav-link active" aria-current="page" href="./web.html">
+                        <p style="margin-left: 10px; color: darkblue; text-align: center; margin-top: 5px;" id="act">Web Design & Development</p>
+                      </a>
+                    </li>
+
+                    <li class="nav-item" id="wif">
+                      <a class="nav-link active"  href="./commerce.html">
+                        <p style="margin-left: 10px; color: darkblue; text-align: center; margin-top: 5px;" id="act">E-Commerce Development</p>
+                      </a>
+                    </li>
+                    <li class="nav-item" id="wif">
+                      <a class="nav-link active" href="./progressive.html">
+                        <p style="margin-left: 10px; color: darkblue; text-align: center; margin-top: 5px;" id="act">Progressive Web App Development</p>
+                      </a>
+                    </li>
+                    <li class="nav-item" id="wif">
+                      <a class="nav-link active" href="./mobile.html">
+                        <p style="margin-left: 10px; color: darkblue; text-align: center; margin-top: 5px;" id="act">Mobile App Development</p>
+                      </a>
+                    </li>
+                    <li class="nav-item" id="wif">
+                      <a class="nav-link active" href="./enterprise.html">
+                        <p style="margin-left: 10px; color: darkblue; text-align: center; margin-top: 5px;" id="act">Enterprise Software Development</p>
+                      </a>
+                    </li>
+                    <li class="nav-item" id="wif">
+                      <a class="nav-link active" href="./sass.html">
+                        <p style="margin-left: 10px; color: darkblue; text-align: center; margin-top: 5px;" id="act">Saas Applicatoin Development</p>
+                      </a>
+                    </li>
+                    <li class="nav-item" id="wif">
+                      <a class="nav-link active" href="./machine.html">
+                        <p style="margin-left: 10px; color: darkblue; text-align: center; margin-top: 5px;" id="act">AI & Machine Learning Development</p>
+                      </a>
+                    </li>
+                    <li class="nav-item" id="wif">
+                      <a class="nav-link active" href="./cloud.html">
+                        <p style="margin-left: 10px; color: darkblue; text-align: center; margin-top: 5px;" id="act">Cloud Computing Service</p>
+                      </a>
+                    </li>
+                    <li class="nav-item" id="wif">
+                      <a class="nav-link active" href="./marketplace.html">
+                        <p style="margin-left: 10px; color: darkblue; text-align: center; margin-top: 5px;" id="act">Marketplace Software Development</p>
+                      </a>
+                    </li>
+
+                  </form>
+                </div>
+              </div>
+            </div>
+          </nav>
+<br><br>
+        
+
+    
        <!-- ,moblie development section -->
        <div class="moblie">
            <div  style="padding-left: 10px; padding-right: 10px; margin-top: 40px; margin-bottom: 100px;">
@@ -96,7 +189,7 @@
         </div>
         <div class="lost" >
             <a href="./email.html" style="text-decoration: none;">
-                <p style="text-align: center; padding-top: 5px; color: darkblue;"><b>Support Team</b></p>
+                <p style="text-align: center; padding-top: 10px; color: darkblue;"><b>Support Team</b></p>
 
             </a>
         </div>
@@ -111,7 +204,7 @@
               <h4 style="color: darkblue;">
                   Moblie App Solution, Tailored for Businessess
               </h4>
-              <p style="color: black;">
+              <p >
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus, officiis. Adipisci temporibus repudiandae vel facilis pariatur! Ducimus ab
                    impedit quasi, in delectus aspernatur ea illum tempora accusamus voluptatem qui animi!
               </p>
@@ -120,7 +213,7 @@
               <h4 style="color: darkblue;">
                   We Develop Next Generation Moblie Apps For any Platform 
               </h4>
-              <p style="color: black;">
+              <p>
                   Our team is experienced in both end-to-end app development and team extention cooperation
                   models to best meet your moblie development needs.
               </p>
